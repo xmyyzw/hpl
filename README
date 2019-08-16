@@ -17,11 +17,10 @@
  well as generic implementations of MPI, the  BLAS  and  VSIPL
  are available for a large variety of systems.
 
- Install See the file INSTALL in this directory.
- -------
-
- Tuning  See the file TUNING in this directory.
- ------
+note
+----
+HPL_GPU places the raw data in the host memory, while HPL_GPUOpt 
+generates the original matrix in the device memory. 
 
  Bugs  Known  problems and bugs with this release are documen-
  ----  ted in the file hpl/BUGS.
