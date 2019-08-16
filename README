@@ -17,10 +17,19 @@
  well as generic implementations of MPI, the  BLAS  and  VSIPL
  are available for a large variety of systems.
 
-note
+note   
 ----
-HPL_GPU places the raw data in the host memory, while HPL_GPUOpt 
-generates the original matrix in the device memory. 
+HPL_GPU places the raw data in the host memory, and assign the update phase to GPU for acceleration,
+while HPL_GPUOpt generates the original matrix in the device memory and reorganize executions between host and device. 
+
+Optimization
+----
+double-buffering
+asynchronous iteration
+launch multi-stream
+static memory allocation
+dynamic partitioning
+
 
  Bugs  Known  problems and bugs with this release are documen-
  ----  ted in the file hpl/BUGS.
